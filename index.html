@@ -1,0 +1,3142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Zoe Portfolio | 2024</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/Zoe.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Template Main CSS File -->
+    <link href="assets/vendor/style.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- ... other CSS links ... -->
+    <!-- Vendor JS Files -->
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <!-- ... other JS links ... -->
+    <!-- =======================================================
+    * Template Name: Squadfree
+    * Updated: Sep 18 2024 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+   
+  
+  <style>
+
+    /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+    #portfolio {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+        #portfolio #portfolio-flters {
+            padding: 0;
+            margin: 0 auto 35px auto;
+            list-style: none;
+            text-align: center;
+            border-radius: 50px;
+            padding: 2px 15px;
+        }
+
+            #portfolio #portfolio-flters li {
+                cursor: pointer;
+                display: inline-block;
+                padding: 10px 15px 8px 15px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1;
+                text-transform: uppercase;
+                color: #999999;
+                margin-bottom: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+
+                #portfolio #portfolio-flters li:hover,
+                #portfolio #portfolio-flters li.filter-active {
+                    color: #b8a07e;
+                }
+
+                #portfolio #portfolio-flters li:last-child {
+                    margin-right: 0;
+                }
+
+        #portfolio .portfolio-item {
+            margin-bottom: 30px;
+        }
+
+            #portfolio .portfolio-item .portfolio-info {
+                opacity: 0;
+                position: absolute;
+                left: 30px;
+                right: 30px;
+                bottom: 0;
+                z-index: 3;
+                transition: all ease-in-out 0.3s;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 15px;
+            }
+
+                #portfolio .portfolio-item .portfolio-info h4 {
+                    font-size: 18px;
+                    color: #666;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                #portfolio .portfolio-item .portfolio-info p {
+                    color: #999;
+                    font-size: 14px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #portfolio .portfolio-item .portfolio-info .preview-link,
+                #portfolio .portfolio-item .portfolio-info .details-link {
+                    position: absolute;
+                    right: 40px;
+                    font-size: 24px;
+                    top: calc(50% - 18px);
+                    color: #b8a07e;
+                }
+
+                    #portfolio .portfolio-item .portfolio-info .preview-link:hover,
+                    #portfolio .portfolio-item .portfolio-info .details-link:hover {
+                        color: #cab89f;
+                    }
+
+                #portfolio .portfolio-item .portfolio-info .details-link {
+                    right: 10px;
+                }
+
+            #portfolio .portfolio-item:hover .portfolio-info {
+                opacity: 1;
+                bottom: 20px;
+            }
+
+
+
+    #hero h6 {
+        color: #fff;
+        margin-bottom: 50px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        /* text-shadow: -1px 0 2px #2f5a52; */
+        font-family: inherit; /* Revert to default font */
+        letter-spacing: 1.5px; /* Adjust letter spacing */
+    }
+
+
+    #hero {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("img/banner.jpg") top center;
+        background-size: cover;
+        position: relative;
+        margin-bottom: -90px;
+    }
+
+
+
+        #hero .hero-container {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #hero h1 {
+            margin: 0 0 10px 0;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 56px;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: -1px 0 2px #2f5a52;
+        }
+
+        #hero h2 {
+            color: #fff;
+            margin-bottom: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-shadow: -1px 0 2px #2f5a52;
+        }
+
+        #hero .btn-get-started {
+            font-size: 36px;
+            display: inline-block;
+            padding: 4px 0;
+            border-radius: 50px;
+            transition: 0.3s ease-in-out;
+            margin: 10px;
+            width: 64px;
+            height: 64px;
+            text-align: center;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+            #hero .btn-get-started:hover {
+                padding-top: 8px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  About
+/*-----------------------------------------------------------------------------------*/
+    #about {
+        width: 100%;
+        height: auto;
+        background: #f7f7f7;
+        padding-top: 120px;
+    }
+
+        #about .div-img-bg {
+            padding-bottom: 30px;
+            border: 20px solid #67d1b1;
+        }
+
+            #about .div-img-bg .about-img img {
+                width: 100%;
+                box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+                margin-top: -60px;
+                margin-left: 40px;
+                height: 400px;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+        #about .about-descr .p-heading {
+            font-family: "Playfair Display", serif;
+            font-size: 28px;
+            text-align: left;
+        }
+
+        #about .about-descr .separator {
+            max-width: 80%;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+    .content p {
+        margin-bottom: 30px;
+    }
+
+    .content .about-btn {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        display: inline-block;
+        background: #67d1b1;
+        padding: 6px 44px 8px 30px;
+        color: #fff;
+        border-radius: 50px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+        .content .about-btn i {
+            font-size: 18px;
+            position: absolute;
+            right: 18px;
+            top: 9px;
+        }
+
+        .content .about-btn:hover {
+            background: #7bd7c0;
+        }
+
+
+ 
+
+    /* Custom classes for each service */
+    .services .icon-box.product-design:hover {
+        background-image: url('img/about-bg.jpg'); /* Replace with the path to your product design image */
+        top: 0;
+        border-radius: 0px;
+    }
+
+    .services .icon-box.mechanical-design:hover {
+        background-image: url('img/hero-bg.jpg'); /* Replace with the path to your mechanical design image */
+        top: 0;
+        border-radius: 0px;
+    }
+
+    .services .icon-box.animation:hover {
+        background-image: url('img/banner.jpg'); /* Replace with the path to your animation image */
+        top: 0;
+        border-radius: 0px;
+    }
+
+    .services .icon-box.graphic-design:hover {
+        background-image: url('img/hero-bg.jpg'); /* Replace with the path to your graphic design image */
+        top: 0;
+        border-radius: 0px;
+    }
+
+
+    /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+    }
+
+    .portfolio #portfolio-flters {
+        padding: 0;
+        margin: 0 auto 35px auto;
+        list-style: none;
+        text-align: center;
+        background: #ecf5f9;
+        border-radius: 50px;
+        padding: 2px 15px;
+    }
+
+        .portfolio #portfolio-flters li {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 15px 8px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #2f5a52;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .portfolio #portfolio-flters li:hover,
+            .portfolio #portfolio-flters li.filter-active {
+                color: #67d1b1;
+            }
+
+            .portfolio #portfolio-flters li:last-child {
+                margin-right: 0;
+            }
+
+
+ 
+
+    /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+    .testimonials .testimonials-carousel,
+    .testimonials .testimonials-slider {
+        overflow: hidden;
+    }
+
+    .testimonials .testimonials-carousel,
+    .testimonials .testimonials-slider {
+        overflow: hidden;
+    }
+
+    .testimonials .testimonial-item {
+        box-sizing: content-box;
+        text-align: center;
+        min-height: 320px;
+    }
+
+        .testimonials .testimonial-item .testimonial-img {
+            width: 300px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .testimonials .testimonial-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: #111;
+        }
+
+        .testimonials .testimonial-item h4 {
+            font-size: 14px;
+            color: #999;
+            margin: 0;
+        }
+
+        .testimonials .testimonial-item .quote-icon-left,
+        .testimonials .testimonial-item .quote-icon-right {
+            color: #d5e9f2;
+            font-size: 26px;
+        }
+
+        .testimonials .testimonial-item .quote-icon-left {
+            display: inline-block;
+            left: -5px;
+            position: relative;
+        }
+
+        .testimonials .testimonial-item .quote-icon-right {
+            display: inline-block;
+            right: -5px;
+            position: relative;
+            top: 10px;
+        }
+
+        .testimonials .testimonial-item p {
+            font-style: italic;
+            margin: 0 15px 15px 15px;
+            padding: 20px;
+            background: #fff;
+            position: relative;
+            margin-bottom: 35px;
+            border-radius: 6px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+            .testimonials .testimonial-item p::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 20px solid #fff;
+                border-right: 20px solid transparent;
+                border-left: 20px solid transparent;
+                position: absolute;
+                bottom: -20px;
+                left: calc(50% - 20px);
+            }
+
+    .testimonials .swiper-pagination {
+        margin-top: 20px;
+        position: relative;
+    }
+
+        .testimonials .swiper-pagination .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            opacity: 1;
+            border: 1px solid #67d1b1;
+        }
+
+        .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #67d1b1;
+        }
+
+
+    /*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+    .cta {
+        background: linear-gradient(rgba(103, 198, 209, 0.8), rgba(103, 198, 209, 0.8)), url("../img/cta-bg01.jpg") fixed center center;
+        background-size: cover;
+        padding: 60px 0;
+    }
+
+
+
+        .cta h3 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .cta p {
+            color: #fff;
+        }
+
+
+
+    .cta-btn {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 25px;
+        transition: 0.5s;
+        margin-top: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+    }
+
+        .cta-btn:hover {
+            border-color: #fff;
+        }
+
+
+
+
+    .edu-btn {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        display: inline-block;
+        background: #67d1b1;
+        padding: 6px 44px 8px 30px;
+        color: #fff;
+        border-radius: 50px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+        .edu-btn i {
+            font-size: 18px;
+            position: absolute;
+            right: 18px;
+            top: 9px;
+        }
+
+        .edu-btn:hover {
+            background: #7bd7c0;
+        }
+
+    /* 将彩度调整为0，转为灰度 */
+    iframe {
+        filter: grayscale(100%);
+    }
+
+        /* 滑鼠靠近时恢复原来的颜色 */
+        iframe:hover {
+            filter: grayscale(0%);
+        }
+
+/* 将所有图片设置为灰度 */
+img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out; /* 增加过渡效果时间 */
+}
+
+    /* 鼠标悬停时恢复原色彩并放大图片内容 */
+    img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out; /* 增加过渡效果时间 */
+    }
+
+
+
+</style>
+
+   
+   <style>
+
+      
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f4f9fc;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  color: #2f5a59;
+  z-index: 2;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 122px;
+  height: 66px;
+  background: url(../img/section-title-bg02.png) no-repeat;
+  z-index: -1;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background-color: #f8fbfd;
+  min-height: 40px;
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  background: url("../img/about-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 9;
+}
+
+.about .container {
+  position: relative;
+  z-index: 10;
+}
+
+.about .content {
+  padding: 30px 30px 30px 0;
+}
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #2f5a54;
+  margin-bottom: 30px;
+}
+
+.about .content p {
+  margin-bottom: 30px;
+}
+
+.about .content .about-btn {
+  display: inline-block;
+  background: #67d1ca;
+  padding: 6px 44px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.about .content .about-btn i {
+  font-size: 18px;
+  position: absolute;
+  right: 18px;
+  top: 9px;
+}
+
+.about .content .about-btn:hover {
+  background: #7bd7ce;
+}
+
+.about .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.about .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #67d1b8;
+  margin-bottom: 10px;
+}
+
+.about .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.about .icon-boxes .icon-box p {
+  font-size: 12px;
+  color: #848484;
+}
+
+@media (max-width: 1200px) {
+  .about .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+    .services .icon-box:hover::before {
+     /*   background: #67b0d1;*/
+        background: url('img/banner.jpg'); /* Replace with the path to your image */
+        top: 0;
+        border-radius: 0px;
+    }
+
+.services .icon {
+  margin-bottom: 15px;
+}
+
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #67d1cc;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding-bottom: 30px;
+}
+
+.counts .count-box {
+  padding: 30px;
+  width: 100%;
+}
+
+.counts .count-box i {
+  display: block;
+  font-size: 44px;
+  color: #67b0d1;
+  float: left;
+  line-height: 0;
+}
+
+.counts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #2f5a53;
+  margin-left: 60px;
+}
+
+.counts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #498c88;
+}
+
+.counts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #498b8c;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+.counts .count-box a:hover {
+  color: #6eb4aa;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #ecf5f9;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #2f4d5a;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #67d1b7;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(103, 209, 209, 0.75);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: rgba(103, 204, 209, 0.95);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
+  border-left: 1px solid #8ed8dd;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #67d1ce;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #67d1bc;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(47, 77, 90, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #2f5a5a;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.team .member:hover .member-info {
+  max-height: 300px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2f5a59;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b1d7d1;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #529d99;
+}
+
+.team .member .social a:hover {
+  color: #67d1ba;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .team .member {
+    margin-bottom: 110px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 80px;
+}
+
+.contact .info-box {
+  color: #444444;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 216, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #67d1cf;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #f0f7fa;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #67cfd1;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #67d1b5;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #8eddd7;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #264948;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-top: -90px;
+  margin-bottom: 15px;
+  background: white;
+  color: #2f5a55;
+  border-top: 4px solid #67bfd1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #2f5a55;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #67cfd1;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #b5e2e9;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #a2e3de;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #67d1d1;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+  background: #40c5a4;
+}
+
+#footer .copyright {
+  border-top: 1px solid #386b60;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+      body {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+
+      /*--------------------------------------------------------------
+      # Services
+      --------------------------------------------------------------*/
+      .services .icon-box {
+          padding: 30px;
+          position: relative;
+          overflow: hidden;
+          background: #fff;
+          box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+          transition: all 0.3s ease-in-out;
+          border-radius: 8px;
+          z-index: 1;
+      }
+
+          .services .icon-box::before {
+              content: "";
+              position: absolute;
+              background: white;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              top: 100%;
+              transition: all 0.3s;
+              z-index: -1;
+          }
+
+          .services .icon-box:hover::before {
+              /*   background: #67d1b1;*/
+              background: url('img/banner.jpg'); /* Replace with the path to your image */
+              top: 0;
+              border-radius: 0px;
+          }
+
+      .services .icon {
+          margin-bottom: 15px;
+      }
+
+          .services .icon i {
+              font-size: 48px;
+              line-height: 1;
+              color: #67d1b1;
+              transition: all 0.3s ease-in-out;
+          }
+
+      .services .title {
+          font-weight: 700;
+          margin-bottom: 15px;
+          font-size: 18px;
+      }
+
+          .services .title a {
+              color: #111;
+          }
+
+      .services .description {
+          font-size: 15px;
+          line-height: 28px;
+          margin-bottom: 0;
+      }
+
+      .services .icon-box:hover .title a,
+      .services .icon-box:hover .description {
+          color: #fff;
+      }
+
+      .services .icon-box:hover .icon i {
+          color: #fff;
+      }
+      /*--------------------------------------------------------------
+      # General
+      --------------------------------------------------------------*/
+      body {
+          font-family: "Open Sans", sans-serif;
+          color: #444444;
+      }
+
+      a {
+          text-decoration: none;
+          color: #67d1b1;
+      }
+
+          a:hover {
+              color: #8eddd4;
+              text-decoration: none;
+          }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: "Raleway", sans-serif;
+      }
+
+      #main {
+          margin-top: 90px;
+      }
+
+
+
+      /*--------------------------------------------------------------
+      # Back to top button
+      --------------------------------------------------------------*/
+      .back-to-top {
+          position: fixed;
+          visibility: hidden;
+          opacity: 0;
+          right: 15px;
+          bottom: 15px;
+          z-index: 998;
+          background: #67d1b1;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          transition: all 0.4s;
+      }
+
+          .back-to-top i {
+              font-size: 24px;
+              color: #fff;
+              line-height: 0;
+          }
+
+          .back-to-top:hover {
+              background: #86dad7;
+              color: #fff;
+          }
+
+          .back-to-top.active {
+              visibility: visible;
+              opacity: 1;
+          }
+
+      /*--------------------------------------------------------------
+      # Disable aos animation delay on mobile devices
+      --------------------------------------------------------------*/
+
+      /*--------------------------------------------------------------
+      # Header
+      --------------------------------------------------------------*/
+      #header {
+          transition: all 0.5s;
+          z-index: 997;
+          transition: all 0.5s;
+          padding: 24px 0;
+          background: rgba(103, 209, 191, 0.8);
+      }
+
+          #header.header-transparent {
+              background: transparent;
+          }
+
+          #header.header-scrolled {
+              background: rgba(55, 181, 166, 0.9);
+              padding: 12px;
+          }
+
+          #header .logo h1 {
+              font-size: 24px;
+              margin: 0;
+              line-height: 1;
+              font-weight: 700;
+              letter-spacing: 1px;
+              font-family: "Poppins", sans-serif;
+              text-transform: uppercase;
+          }
+
+              #header .logo h1 a,
+              #header .logo h1 a:hover {
+                  color: #fff;
+                  text-decoration: none;
+              }
+
+          #header .logo img {
+              padding: 0;
+              margin: 0;
+              max-height: 40px;
+          }
+
+
+      /*--------------------------------------------------------------
+      # Hero Section
+      --------------------------------------------------------------*/
+      #hero {
+          width: 100%;
+          height: 100vh;
+          background: linear-gradient(rgba(55, 175, 181, 0.5), rgba(55, 175, 181, 0.2)), url("img/banner.jpg") top center;
+          background-size: cover;
+          position: relative;
+          margin-bottom: -90px;
+      }
+
+
+
+          #hero .hero-container {
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              text-align: center;
+          }
+
+          #hero h1 {
+              margin: 0 0 10px 0;
+              font-size: 64px;
+              font-weight: 700;
+              line-height: 56px;
+              text-transform: uppercase;
+              color: #fff;
+              text-shadow: -1px 0 2px #2f5a52;
+          }
+
+          #hero h6 {
+              color: #fff;
+              margin-bottom: 50px;
+              font-size: 24px;
+              text-transform: uppercase;
+              font-weight: 800;
+              /*  text-shadow: -1px 0 2px #2f5a52;*/
+          }
+
+          #hero .btn-get-started {
+              font-size: 36px;
+              display: inline-block;
+              padding: 4px 0;
+              border-radius: 50px;
+              transition: 0.3s ease-in-out;
+              margin: 10px;
+              width: 64px;
+              height: 64px;
+              text-align: center;
+              border: 2px solid #fff;
+              color: #fff;
+          }
+
+              #hero .btn-get-started:hover {
+                  padding-top: 8px;
+                  background: rgba(255, 255, 255, 0.15);
+              }
+  </style>
+
+    <style>
+
+      
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /*--------------------------------------------------------------
+        # Services
+        --------------------------------------------------------------*/
+        .services .icon-box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+            transition: all 0.3s ease-in-out;
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+            .services .icon-box::before {
+                content: "";
+                position: absolute;
+                background: white;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                top: 100%;
+                transition: all 0.3s;
+                z-index: -1;
+            }
+
+            .services .icon-box:hover::before {
+                /*   background: #67d1b1;*/
+                background: url('img/banner.jpg'); /* Replace with the path to your image */
+                top: 0;
+                border-radius: 0px;
+            }
+
+        .services .icon {
+            margin-bottom: 15px;
+        }
+
+            .services .icon i {
+                font-size: 48px;
+                line-height: 1;
+                color: #67d1b1;
+                transition: all 0.3s ease-in-out;
+            }
+
+        .services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+            .services .title a {
+                color: #111;
+            }
+
+        .services .description {
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+
+        .services .icon-box:hover .title a,
+        .services .icon-box:hover .description {
+            color: #fff;
+        }
+
+        .services .icon-box:hover .icon i {
+            color: #fff;
+        }
+        /*--------------------------------------------------------------
+        # General
+        --------------------------------------------------------------*/
+        body {
+            font-family: "Open Sans", sans-serif;
+            color: #444444;
+        }
+
+        a {
+            text-decoration: none;
+            color: #67d1b1;
+        }
+
+            a:hover {
+                color: #8eddd4;
+                text-decoration: none;
+            }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        #main {
+            margin-top: 90px;
+        }
+
+
+
+        /*--------------------------------------------------------------
+        # Back to top button
+        --------------------------------------------------------------*/
+        .back-to-top {
+            position: fixed;
+            visibility: hidden;
+            opacity: 0;
+            right: 15px;
+            bottom: 15px;
+            z-index: 998;
+            background: #67d1b1;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            transition: all 0.4s;
+        }
+
+            .back-to-top i {
+                font-size: 24px;
+                color: #fff;
+                line-height: 0;
+            }
+
+            .back-to-top:hover {
+                background: #86dad7;
+                color: #fff;
+            }
+
+            .back-to-top.active {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        /*--------------------------------------------------------------
+        # Disable aos animation delay on mobile devices
+        --------------------------------------------------------------*/
+
+        /*--------------------------------------------------------------
+        # Header
+        --------------------------------------------------------------*/
+        #header {
+            transition: all 0.5s;
+            z-index: 997;
+            transition: all 0.5s;
+            padding: 24px 0;
+            background: rgba(103, 209, 191, 0.8);
+        }
+
+            #header.header-transparent {
+                background: transparent;
+            }
+
+            #header.header-scrolled {
+                background: rgba(55, 181, 166, 0.9);
+                padding: 12px;
+            }
+
+            #header .logo h1 {
+                font-size: 24px;
+                margin: 0;
+                line-height: 1;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-family: "Poppins", sans-serif;
+                text-transform: uppercase;
+            }
+
+                #header .logo h1 a,
+                #header .logo h1 a:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+            #header .logo img {
+                padding: 0;
+                margin: 0;
+                max-height: 40px;
+            }
+
+
+        /*--------------------------------------------------------------
+        # Hero Section
+        --------------------------------------------------------------*/
+        #hero {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(55, 175, 181, 0.5), rgba(55, 175, 181, 0.2)), url("img/banner.jpg") top center;
+            background-size: cover;
+            position: relative;
+            margin-bottom: -90px;
+        }
+
+
+
+            #hero .hero-container {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #hero h1 {
+                margin: 0 0 10px 0;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 56px;
+                text-transform: uppercase;
+                color: #fff;
+                text-shadow: -1px 0 2px #2f5a52;
+            }
+
+            #hero h6 {
+                color: #fff;
+                margin-bottom: 50px;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-weight: 800;
+                /*  text-shadow: -1px 0 2px #2f5a52;*/
+            }
+
+            #hero .btn-get-started {
+                font-size: 36px;
+                display: inline-block;
+                padding: 4px 0;
+                border-radius: 50px;
+                transition: 0.3s ease-in-out;
+                margin: 10px;
+                width: 64px;
+                height: 64px;
+                text-align: center;
+                border: 2px solid #fff;
+                color: #fff;
+            }
+
+                #hero .btn-get-started:hover {
+                    padding-top: 8px;
+                    background: rgba(255, 255, 255, 0.15);
+                }
+    </style>
+
+<!-- Add the necessary CSS and JavaScript to initialize the Swiper -->
+<style>
+  .team-slider {
+      width: 100%;
+  }
+  
+      .team-slider .swiper-slide {
+          width: 100%;
+          margin-right: 0;
+      }
+  
+      .team-slider .swiper-pagination {
+          margin-top: 15px;
+      }
+  </style>
+
+    <style>
+        /* Add custom styles for hover effect */
+        .navbar-nav .nav-link:hover {
+            background-color: #c4fcff;
+            border-radius: 10px; /* 设置圆角 */
+            color:  rgba(0, 65, 68, 0.8); /* 设置悬停时的底色 */ /* Change the color on hover */
+        }
+
+        /* Adjust the color for the active link */
+        .navbar-nav .nav-link.active {
+            background-color: #c4fcff; /* 设置悬停时的底色 */ /* 设置激活时的底色 */
+            border-radius: 10px; /* 设置圆角 */
+
+            color: rgba(0, 65, 68, 0.8); /* Change the active link color */
+        }
+
+        /* Custom styles to make the navbar transparent */
+        .navbar-custom {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+       /* 新增样式用于隐藏菜单 */
+        .navbar-collapse.collapsing {
+            display: none;
+        }
+
+        /* 移除navbar-brand链接的hover效果 */
+        .navbar-brand:hover {
+            border-radius: 10px; /* 设置圆角 */
+            color:#fff; /* 设置悬停时的底色 */ /* Change the color on hover */
+            font-size: 1.2em; /* 放大字体，可以根据需要调整数值 */
+        }
+        /* 自定义hover效果 */
+        .custom-hover:hover {
+            /* 添加你想要的hover样式，例如改变背景颜色 */
+            background-color: #fff;
+            border-radius: 10px; /* 设置圆角 */
+            color: rgba(0, 65, 68, 0.8); /* 设置悬停时的底色 */ /* Change the color on hover */
+        }
+
+        /* 设置搜索框边框为圆角 */
+        .d-flex {
+            border-radius: 20px;
+        }
+
+
+        
+    </style>
+    
+    <!-- ... other head content ... -->
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  
+</head>
+
+
+<body>
+  
+ 
+
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top header-transparent">
+  <nav class="navbar navbar-expand-lg">
+      <div class="container"  style="margin-top: 20px;">
+          <a class="navbar-brand" href="#" style="font-family: 'Bad Script', cursive; font-size: 30px; transition: none; ">
+              Zoe Hsueh
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+        
+           <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="featuresDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Works
+                </a>
+                <div class="dropdown-menu" aria-labelledby="featuresDropdown">
+                    <a class="dropdown-item" href="#portfolio">Mechanical Design</a>
+                    <a class="dropdown-item" href="#portfolio">Animation</a>
+                    <a class="dropdown-item" href="#portfolio">Graphic Design</a>
+                    <a class="dropdown-item" href="#portfolio">WebSite Design</a>
+                    <a class="dropdown-item" href="#portfolio">Interior Design</a>
+               
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Product Design
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Product-Y3000.html">Baby Walker</a></li>
+                      <li><a class="dropdown-item" href="Product-Virtual Exhibition .html">SPE虛擬展間設計</a></li>
+                      <li><a class="dropdown-item" href="Product-X-Folding Bike.html">X-Folding Bike</a></li>
+                    </ul>
+                </div>
+            </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Experience</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html" title="管理者登入"  style="color: black;">
+                      <i class="bi bi-person-circle bi-4x" style="font-size: 20px;"></i>
+                  </a>
+       
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html" title="shop"  style="color: black;">
+                    <i class='bx bx-shopping-bag ' id="cart-icon" style="font-size: 20px;"></i>
+                </a>
+            </li>
+        
+
+            <div id="google_translate_element" style="padding: 8px;"></div>
+        
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'zh-TW',
+                        includedLanguages: 'en,es,ja,zh-TW,fr',  // 包括日文作为目标语言
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+            <form class="d-flex" action="https://www.google.com/search" method="get" role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="輸入Google關鍵字..." aria-label="Search" name="q">
+                <button class="btn btn-outline-light rounded-pill" type="submit">Search</button>
+            </form>
+
+        
+
+        </div>
+        
+      </div>
+  </nav>
+</header>
+<!-- End Header -->
+
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container" data-aos="fade-up">
+      <h1>Portfolio 2024</h1>
+      <p></p>
+      <h6>工業デザイナー.Product Designer</h6>
+      <a class="" href="#about"><i class="btn-get-started scrollto; bi bi-chevron-compact-down"></i></a>
+  </div>
+  </section><!-- End Hero -->
+  
+  <main id="main">
+<!-- ======= About Section ======= -->
+<section id="about">
+  <div class="paddsection">
+      <div class="container">
+          <div class="row justify-content-between">
+
+              <div class="col-lg-4 ">
+                  <div class="div-img-bg">
+                      <div class="about-img">
+                          <img src="img/aboutme.jpg" class="img-responsive" alt="me">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-7">
+                  <div class="about-descr">
+
+                       <p></p>
+                      <h3> 簡介 / Introduction</h3>
+                      <p> 薛 紫妤 /  Industrial designer</p>
+                      <p>setusiyo@gmail.com</p>
+                      <p> +886-980-016-674</p>
+                      <div class="content">
+                          <h3></h3>
+                          <p></p>
+                          <a href="#" class="about-btn" data-toggle="collapse" data-target="#aboutContent" aria-expanded="false">About me +<i class="bx bx-chevron-right"></i></a>
+                          <p style="margin-bottom:10px;"></p>
+                      </div>
+                      <p class="separator">I'm an industrial designer based in Taiwan who loves clean, simple, and unique design. I also enjoy crafting brand identities, icons, and illustration work. </p> 
+                    
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</section><!-- End About Section -->
+
+<div id="aboutContent" class="collapse">
+  <!-- 这里放置你要展开/折叠的内容 -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+      <div class="container">
+
+          <div class="section-title" data-aos="fade-in" data-aos-delay="1">
+              <h2>專業技能 /  Expertise</h2>
+              <!-- <p>
+                  I am an industrial designer based in Taiwan with a passion for clean, simple, and unique design.
+                  I excel in crafting brand identities, icons, and illustrations. With over a decade of experience in both product and graphic design,
+                  I am adept at overcoming design challenges and presenting creative solutions.
+              </p> -->
+          </div>
+
+          <div class="row">
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" style="width:300px;">
+                  <div class="icon-box" data-aos="fade-up">
+                      <div class="product-design"><i class="bx bxl-dribbble"></i></div>
+                      <h4 class="title"><a href="">產品設計 / Product Design</a></h4>
+                      <p class="description">+ 3D software / Rhino</p>
+                      <p class="description">+ 3D software / Keyshot</p>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" style="width:300px;">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="1">
+                      <div class="mechanical-design"><i class="bx bx-file"></i></div>
+                      <h4 class="title"><a href="">機構設計 /Mechanical Design</a></h4>
+                      <p class="description">+ 3D software / Solidworks</p>
+                      <p class="description">+ 3D software / Rhino</p>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" style="width:300px;">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="2">
+                      <div class="animation"><i class="bx bx-tachometer"></i></div>
+                      <h4 class="title"><a href="">動畫表現 /Animation</a></h4>
+                      <p class="description">+ Adobe After Effects</p>
+                      <p class="description">+ 3D software / Rhino</p>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" style="width:300px;">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="3">
+                      <div class="graphic-design"><i class="bx bx-world"></i></div>
+                      <h4 class="title"><a href="">平面設計 / Graphic Design</a></h4>
+                      <p class="description">+ Adobe Photoshop </p>
+                      <p class="description">+ Adobe Illustrator </p>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+  </section><!-- End Services Section -->
+</div>
+
+<section id="counts" class="counts  section-bg">
+  <div class="container">
+
+      <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                  <i class="bi bi-emoji-smile"></i>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p><strong>產品設計</strong> Product Design</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                  <i class="bi bi-journal-richtext"></i>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p><strong>機構設計 </strong> Mechanical Design</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                  <i class="bi bi-headset"></i>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p><strong>動畫表現 </strong> Animation</p>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                  <i class="bi bi-people"></i>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p><strong>平面設計 </strong> Graphic Design</p>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</section><!-- End Counts Section -->
+<!-- ======= Works Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-in" data-aos-delay="1">
+        <h2>Works <span id="total-items"></span></h2>
+        <p>Check out my recent works.</p>
+    </div>
+
+      <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                   <li data-filter="*" class="filter-active">All</li> 
+                  <li data-filter=".filter-P">產品</li>
+                  <li data-filter=".filter-I">空間</li>
+                  <li data-filter=".filter-M">機構</li>
+                  <li data-filter=".filter-A"> 動畫 </li>
+                  <li data-filter=".filter-G"> 視覺</li>
+                  <li data-filter=".filter-W"> 網頁</li> 
+              </ul>
+          </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-P">
+              <img src="img/portfolio/X-Folding Bike 01.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>X-Folding Bike</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/X-Folding Bike 01.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="X-Folding Bike 1"><i class="bx bx-plus"></i></a>
+                  <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+    
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-P">
+              <img src="img/portfolio/X-Folding Bike 02.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>X-Folding Bike</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/X-Folding Bike 02.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="X-Folding Bike 2"><i class="bx bx-plus"></i></a>
+                  <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-P">
+            <img src="img/portfolio/Y3000.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>Baby Walker</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/Y3000.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Y3000"><i class="bx bx-plus"></i></a>
+                <a href="Product-Baby Walker.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-P">
+            <img src="img/portfolio/AI智能相機.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>X-Folding Bike</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/AI智能相機.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI智能相機"><i class="bx bx-plus"></i></a>
+                 <a href="#portfolio" onclick="checkPassword('11233')" title="請輸入密碼"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+
+
+<script>function checkPassword(password) {
+  var enteredPassword = prompt("Please enter the password:");
+  if (enteredPassword === password) {
+      window.location.href = "Product-X-Folding Bike.html"; // 如果密碼正確，導向連結
+  } else {
+      alert("Incorrect password. Please try again."); // 如果密碼不正確，彈出警告
+  }
+}
+</script> -->
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-P">
+            <img src="img/portfolio/AI智能相機.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>X-Folding Bike</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/AI智能相機.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI智能相機"><i class="bx bx-plus"></i></a>
+                <input type="password" id="passwordInput">
+                <button onclick="checkPassword()">提交</button>
+            </div>
+        </div>
+
+        <script>
+            function checkPassword() {
+              var projectName = "AI智能相機"; // 替换为您要检查的项目名称
+              var password = document.getElementById("passwordInput").value;
+              var url = "https://script.google.com/macros/s/AKfycbxhLpacBdzlp3UTh6KONYyP-3brODZfPTDo51a4ehNyAmzmWncRm-NvSfC1WJ1GJ0O6vw/exec?projectName=" + encodeURIComponent(projectName);
+              fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                  if (data.trim() === password) {
+                    window.location.href = "Product-X-Folding Bike.html"; // 密码正确，跳转到项目详情页
+                  } else {
+                    alert("密码错误，请重新输入！");
+                  }
+                });
+            }
+          </script>
+           -->
+
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-I">
+            <img src="img/portfolio/interior/20160220行政大樓左右棟動線導引圖1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>NKNU-Elevator Wall Enhancement</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/interior/20160220行政大樓左右棟動線導引圖1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="interior"><i class="bx bx-plus"></i></a>
+                <a href="Interior Design-NKNU-Elevator Wall Enhancement.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+
+  
+        <div class="col-lg-4 col-md-6 portfolio-item filter-I">
+            <img src="img/portfolio/interior/Accessible Ramp Design/01.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>NKNU-Elevator Wall Enhancement</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/interior/Accessible Ramp Design/01.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="interior"><i class="bx bx-plus"></i></a>
+                <a href="Interior Design-NKNU-Elevator Wall Enhancement.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-M">
+              <img src="img/portfolio/X-Folding-Bike-05.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>X-Folding Bike</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/X-Folding-Bike-05.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="X-Folding Bike 5"><i class="bx bx-plus"></i></a>
+                  <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-M">
+              <img src="img/portfolio/USB隨身碟.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>USB隨身碟</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/USB隨身碟.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="USB隨身碟"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a> -->
+              </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+            <img src="img/portfolio/t-shirt.gif" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>T-shirt design</h4>
+                <p></p>
+                <p></p>
+                <a href="img/portfolio/t-shirt.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="t-shirt"><i class="bx bx-plus"></i></a>
+                <!-- <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-A">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/B3JLRajkHX0" frameborder="0" allowfullscreen></iframe>
+              <div class="portfolio-info">
+                  <h4>企業虛擬展間-模擬情境</h4>
+                  <p></p>
+                  <p></p>
+                  <!-- 修改链接为正确的YouTube视频链接，并调整title -->
+                  <a href="https://www.youtube.com/embed/B3JLRajkHX0" class="portfolio-lightbox" title="企業虛擬展間-模擬情境"><i class="bx bx-play"></i></a>
+                  <!-- 如果您希望在点击时跳转到YouTube页面，可以保留这个链接 -->
+                  <a href="Product-Virtual Exhibition .html" title="More Details"><i class="bx bx-link"></i></a> 
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-A">
+              <iframe width="100%" height="260" src="https://www.youtube.com/embed/9QCZaxWiPpY?si=uX4AMZvZsWoovqSl" frameborder="0" allowfullscreen></iframe>
+              <div class="portfolio-info">
+                  <h4>企業介紹公司-影片專案</h4>
+                  <p></p>
+                  <p></p>
+                  <!-- 修改链接为正确的YouTube视频链接，并调整title -->
+                  <a href="https://www.youtube.com/embed/9QCZaxWiPpY?si=uX4AMZvZsWoovqSl" class="portfolio-lightbox" title="企業介紹公司-影片專案"><i class="bx bx-play"></i></a>
+                  <!-- 如果您希望在点击时跳转到YouTube页面，可以保留这个链接 -->
+                  <a href="Product-Virtual Exhibition .html" title="More Details"><i class="bx bx-link"></i></a> 
+              </div>
+          </div>
+
+   
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/手繪草圖－內部空間設計.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>企業虛擬展間-模擬情境</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/手繪草圖－內部空間設計.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="企業虛擬展間-模擬情境"><i class="bx bx-plus"></i></a>
+                  
+              </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/手繪草圖－科技感外觀.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>手繪草圖－科技感外觀</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/手繪草圖－科技感外觀.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="手繪草圖－科技感外觀"><i class="bx bx-plus"></i></a>
+                   </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/手繪草圖－整體場景設計.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>手繪草圖－整體場景設計/h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/手繪草圖－整體場景設計.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="手繪草圖－整體場景設計"><i class="bx bx-plus"></i></a>
+                   </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/日間效果 - 柔美的情境.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>日間效果 - 柔美的情境</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/日間效果 - 柔美的情境.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="日間效果 - 柔美的情境"><i class="bx bx-plus"></i></a>
+                  </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/夜間效果 - LOGO打燈.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>夜間效果，LOGO打燈。</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/夜間效果 - LOGO打燈.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="夜間效果，LOGO打燈。"><i class="bx bx-plus"></i></a>
+                   </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/黃昏效果.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>企業虛擬展間-模擬情境</h4>
+                  <p>黃昏效果。</p>
+                  <p></p>
+                  <a href="img/portfolio/黃昏效果.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="黃昏效果。"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div> -->
+
+
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-W">
+              <img src="img/portfolio/SEP Website.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>SEP Website</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/SEP Website.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SEP Website"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="SEP Website.png" title="More Details"><i class="bx bx-link"></i></a> -->
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</section><!-- End Works Section -->
+<!-- ======= Counts Section ======= -->
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+
+      <div class="text-center">
+          <h3>證照 / Pat. Patent</h3>
+
+          <p class="separator">Holder of multiple patents and language certifications. </p>
+          <p style="margin-top:30px;"></p>
+          <a class="cta-btn" href="#" data-toggle="collapse" data-target="#moreContent">read +</a>
+
+      </div>
+
+  </div>
+
+  <!-- 这里放置你要展开/折叠的内容 -->
+</section><!-- End Cta Section -->
+
+
+<div id="moreContent" class="collapse">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+      <div class="container">
+          <div class="row no-gutters">
+
+              <div class="col-xl-12 d-flex align-items-stretch">
+                  <div class="icon-boxes d-flex flex-column justify-content-center">
+                      <div class="row">
+                          <div class="col-md-3 icon-box" data-aos="fade-up" data-aos-delay="1">
+                              <i class="bx bx-receipt"></i>
+                              <h4>日文檢定 / JLPT N2</h4>
+                              <p>SEP 2017/ JLPT N2</p>
+                              <p>JUL 2015 / JLPT N3</p>
+
+
+
+                          </div>
+                          <div class="col-md-3 icon-box" data-aos="fade-up" data-aos-delay="2">
+                              <i class="bx bx-cube-alt"></i>
+                              <h4> 新型專利 /  Pat. Patent</h4>
+                              <p>多功能書冊 / M396759  </p>
+                              <p>可分層展開之懸吊式燈具 / M394412</p>
+                              <p>礦石紙材之結構改良/ M392834</p>
+                              <p>非木漿、非礦石之環保紙材的結構  改良/ M392835</p>
+                          </div>
+                          <div class="col-md-3 icon-box" data-aos="fade-up" data-aos-delay="3">
+                              <i class="bx bx-images"></i>
+                              <h4>網版製版乙級</h4>
+                              <p>
+                                  26 MAR 2006 /  Level B technician  for screen graphic
+                              </p>
+                          </div>
+                          <div class="col-md-3 icon-box" data-aos="fade-up" data-aos-delay="4">
+                              <i class="bx bx-shield"></i>
+                              <h4>
+                                  廣告設計丙級
+                              </h4>
+                              <p>
+                                  23 FEB 2004 / Level B technician   for screen graphic
+                              </p>
+                          </div>
+                      </div>
+                  </div><!-- End .content-->
+              </div>
+          </div>
+
+      </div>
+  </section><!-- End About Section -->
+</div>
+
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container">
+
+      <div class="section-title" data-aos="fade-in" data-aos-delay="1">
+          <h2>
+              Education
+          </h2>
+
+          <p><strong><b>2013 - 2016 NKNU University</b></strong></p>
+
+          <span> Master’s Degree / Industrial Design</span>
+          <p style="margin-top:30px;"></p>
+          <a class="edu-btn" href="#" data-toggle="collapse" data-target="#moreEducation">read +</a>
+      </div>
+      <div id="moreEducation" class="collapse">
+          <!-- 这里放置你要展开/折叠的内容 -->
+
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="1">
+              <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              2015年 日本岩手大學交流計畫  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                          <img src="img/testimonials/兩用餐椅.jpg" class="testimonial-img" alt="">
+                          <h3>2 in 1 兩用餐椅</h3>
+                          <h4>期末作品展(NHK報導)</h4>
+                      </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              2014年 晶華盃3C家具設計競賽<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                          <img src="img/testimonials/育兒SOFA.jpg" class="testimonial-img" alt="">
+                          <h3>育兒SOFA</h3>
+                          <h4>佳作</h4>
+                      </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              ​2014年 南投花燈設計<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                          <img src="img/testimonials/花燈設計.jpg" class="testimonial-img" alt="">
+                          <h3>台灣麻糬博物館 </h3>
+                          <h4> 在地化意象結合展銷-廠商參展</h4>
+                      </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>2015年
+
+                              高雄市政府103年度地方產業創新研發推動計畫(地方型SBIR)計畫
+
+                              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                          <img src="img/testimonials/裕賀食品-庖丁解牛.gif" class="testimonial-img" alt="">
+                          <h3> 現代庖丁解牛</h3>
+                          <h3> 裕賀食品之數位文創</h3>
+
+                          <h4> a.館內展示品設計 </h4>
+                          <h4> b.贈品：衍伸性商品設計 </h4>
+                          <h4> c.3D建模、情境模擬</h4>
+                           <h4> 自103/09/01至104/8/31止</h4> 
+                          <h4>
+                          </h4>
+                      </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <p>
+                              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                              2016年高雄師範大學行政大樓-資訊服務與排隊引導地磚規劃設計之執行計畫 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                          </p>
+                          <img src="img/testimonials/「貼心」電梯牆面美化.jpg" class="testimonial-img" alt="">
+                          <h3> 「貼心」電梯牆面美化 </h3>
+                          <h4> a.計畫草案 </h4>
+                          <h4> b.設計方針與提案  </h4>
+                          <h4> c.丈量場地、3D建模、情境模擬</h4>
+                      </div>
+                  </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+  </div>
+</section><!-- End Testimonials Section -->
+<!-- ======= Team Section ======= -->
+
+<section id="team" class="team">
+  <div class="container">
+
+      <div class="section-title" data-aos="fade-in" data-aos-delay="1">
+        <h2>Work Experience <span id="total-experience"></span></h2>
+          <p>With over a decade of experience in product and graphic design, adept at tackling design challenges and showcasing creative outcomes.</p>
+      </div>
+
+      <div class="team-slider swiper" data-aos="fade-up" data-aos-delay="1">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="member">
+                    <div class="pic"><img src="img/portfolio/匹克球拍.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>2023/11- 至今</h4>
+                        <span>產品開發部-高級設計師</span>
+                        <div class="social">
+                            <span>久奈司體育事業有限公司</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="member">
+                    <div class="pic"><img src="img/portfolio/AI智能相機.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>2023/9- 2023/11</h4>
+                        <span>工業設計師(外包)</span>
+                        <div class="social">
+                            <span>藏識科技有限公司</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/祥景.gif" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2020/6- 2022/7</h4>
+                          <span>工業設計師</span>
+                          <div class="social">
+                              <span>祥景精機股份有限公司</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/萬達康.jpg" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2018/7 - 2020/4</h4>
+                          <span>產品開發專員</span>
+                          <div class="social">
+                              <span>萬達康股份有限公司</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/高師大工業設計講師-產品爆炸圖示意.gif" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2017/9 - 2018/8</h4>
+                          <span>工業設計系 兼任講師</span>
+                          <div class="social">
+                              <span>國立高雄師範大學</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/科工館.gif" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2016/10 - 2017/12</h4>
+                          <span>智慧博物館IoT_數位人文計畫助理</span>
+                          <div class="social">
+                              <span>國立科學工藝博物館</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/坤獅_包裝設計.gif" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2012/11 - 2013/8</h4>
+
+                          <span>平面包裝設計師</span>
+                          <div class="social">
+                              <span>坤獅食品</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="member">
+                      <div class="pic"><img src="img/team/同喬學步車.gif" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                          <h4>2011/5 - 2012/1</h4>
+                          <span>工業設計 工程師(ID)</span>
+                          <div class="social">
+                              <span>同喬實業股份有限公司</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+
+<section id="contact" class="contact section-bg">
+  <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+          <h2>Contact</h2>
+          <p>Feel free to fill out the form and get in touch with me. </p>
+          <!-- <p>歡迎填寫表單與我連繫。</p> -->
+      </div>
+  </div>
+
+  <div class="row">
+
+      <div class="col-lg-6 ">
+          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.022052252119!2d120.30707897530172!3d22.615651679461145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049d37d417db%3A0xcb326ebd62641fea!2z6auY6ZuE5biC5LiJ5aSa5LiJ6Lev!5e0!3m2!1szh-TW!2stw!4v1695488292272!5m2!1szh-TW!2stw" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-lg-6">
+          <form class="php-email-form" method="post" name="contact-form">
+              <div class="row">
+                  <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+              </div>
+              <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+     
+              <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <h3>Get in Touch</h3>
+                        <p class="pb-3"><em>Feel free to reach out and connect with me.</em></p>
+                        <p>
+                             <br>
+                            Kaohsiung, Taiwan<br><br>
+                            <strong>Phone:</strong> +886 980 016 674<br>
+                            <strong>Email:</strong> kikibird1017@gmail.com<br>
+                        </p>
+                        <!-- <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i> </a>
+                            <a href="#" class="google-plus"><i class="bi bi-skype"></i> </a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6 footer-links">
+                    <h4>Website Map</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#about">About me</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Works</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#cta">Expertise</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#team">Work Experience</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+        
+
+                <div class="col-lg-3 col-6 footer-newsletter">
+                    <h4>Web QRCode</h4>
+                    <img src="img/MyWeb.png" alt="QR Code Image" width="150" height="150">
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="color: rgba(0, 0, 0, 0.2);">
+        <div class="copyright" style="color: rgba(0, 0, 0, 0.2);">
+            &copy; Copyright <span id="currentYear"></span><strong><span>ZoePortfolio2024</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits" style="color: rgba(0, 0, 0, 0.2);">
+            Designed by <a style="color: rgba(0, 0, 0, 0.2);" href="https://pseprkxa8clpburmzcov9a.on.drv.tw/ZoeDesign.com/ " >Zoehsueh</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- portfolio JS Files -->
+  <!-- <script>document.addEventListener("DOMContentLoaded", function() {
+    // 找到所有的portfolio-item
+    var items = document.querySelectorAll(".portfolio-item");
+    // 找到顯示項目數量的span元素
+    var totalItems = document.getElementById("total-items");
+    // 將項目數量填入span元素中
+    totalItems.textContent = "(" + items.length + ")";
+});
+</script> -->
+
+<script>// 獲取所有的類別標籤
+    const filters = document.querySelectorAll('#portfolio-flters li');
+    
+    // 獲取所有的作品項目
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    // 為每個類別標籤添加點擊事件監聽器
+    filters.forEach(filter => {
+      filter.addEventListener('click', () => {
+        // 獲取當前類別
+        const currentFilter = filter.getAttribute('data-filter');
+    
+        // 獲取當前類別的項目數量
+        const itemCount = document.querySelectorAll(`.portfolio-item${currentFilter}`).length;
+    
+        // 更新顯示類別的項目數量
+        document.getElementById('total-items').textContent = `(${itemCount})`;
+    
+        // 重置所有類別標籤的樣式
+        filters.forEach(f => f.classList.remove('filter-active'));
+    
+        // 將當前類別標籤設置為選中狀態
+        filter.classList.add('filter-active');
+      });
+    });
+    
+    // 為"全部"類別標籤添加點擊事件監聽器
+document.querySelector('[data-filter="*"]').addEventListener('click', () => {
+  // 獲取所有作品項目的總數
+  const totalItemCount = document.querySelectorAll('.portfolio-item').length;
+
+  // 更新顯示所有類別的總數
+  document.getElementById('total-items').textContent = `(${totalItemCount})`;
+
+  // 重置所有類別標籤的樣式
+  filters.forEach(f => f.classList.remove('filter-active'));
+
+  // 將"全部"類別標籤設置為選中狀態
+  document.querySelector('[data-filter="*"]').classList.add('filter-active');
+});
+
+
+    </script>
+
+
+    <!--  Team JS Files -->
+<script>document.addEventListener("DOMContentLoaded", function() {
+    // 找到所有的team-slider
+    var teamSlides = document.querySelectorAll(".team-slider .swiper-slide");
+    // 找到顯示總項目數量的span元素
+    var totalExperience = document.getElementById("total-experience");
+    // 將項目數量填入span元素中
+    totalExperience.textContent = "(" + teamSlides.length + ")";
+});
+</script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js/1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
+<script>
+
+    
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxjPf1vf67dxaUWndbqsgSO6FwAo6M4kjClNhWBH4C2LM5S7RatqNZqPBXPE2n8q9Re/exec'
+  const form = document.forms['contact-form']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thank you! your form is submitted successfully." ))
+    .then(() => { window.location.reload(); })
+    .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.testimonials-slider', {
+        /*  slidesPerView: 3,*/
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 3
+            },
+            // when window width is >= 768px and < 1200px
+            768: {
+                slidesPerView: 1
+            }
+        }
+    });
+});
+
+
+
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var teamSwiper = new Swiper('.team-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            }
+        }
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function () {
+      // Initialize Isotope
+      var $container = $('.portfolio-container').isotope({
+          itemSelector: '.portfolio-item',
+          layoutMode: 'fitRows'
+      });
+  
+      // Filter items on button click
+      $('#portfolio-flters li').on('click', function () {
+          var filterValue = $(this).attr('data-filter');
+          $container.isotope({ filter: filterValue });
+          $('#portfolio-flters li').removeClass('filter-active');
+          $(this).addClass('filter-active');
+      });
+  });
+  
+  
+  
+  </script>
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').dropdown(); // Initialize dropdowns
+  });
+</script>
+
+<script>
+
+  /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+      let portfolioContainer = select('.portfolio-container');
+      if (portfolioContainer) {
+          let portfolioIsotope = new Isotope(portfolioContainer, {
+              itemSelector: '.portfolio-item',
+              layoutMode: 'fitRows'
+          });
+  
+          let portfolioFilters = select('#portfolio-flters li', true);
+  
+          on('click', '#portfolio-flters li', function (e) {
+              e.preventDefault();
+              portfolioFilters.forEach(function (el) {
+                  el.classList.remove('filter-active');
+              });
+              this.classList.add('filter-active');
+  
+              portfolioIsotope.arrange({
+                  filter: this.getAttribute('data-filter')
+              });
+  
+          }, true);
+      }
+  
+  });
+  
+  /**
+   * Initiate portfolio lightbox
+   */
+  const portfolioLightbox = GLightbox({
+      selector: '.portfolio-lightbox'
+  });
+  
+  /**
+   * Portfolio details slider
+   */
+   new Swiper('.portfolio-details-slider', {
+      speed: 4,
+      loop: true,
+      autoplay: false,  // 设置autoplay为false
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+  });
+  
+  
+  </script>
+</body>
+
+</html>

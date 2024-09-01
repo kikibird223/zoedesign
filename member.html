@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>登入</h1>
+    <form onsubmit="onSubmit(event)">
+        <label>帳號<input type="text" name="username" autocomplete="username" required /></label>
+        <label>密碼<input type="password" name="password" autocomplete="current-password" required /></label>
+        <input type="submit" value="登入" />
+    </form>
+    <div id="msg"></div>
+    <br />
+
+</body>
+<script>
+    function showText(txt) {
+        var target = document.getElementById('msg');
+        if (target) target.textContent = typeof txt !== "string" ? JSON.stringify(txt) : txt;
+    }
+    function onSubmit(event) {
+        event.preventDefault();
+        showText('登入中，請稍候...');
+        try {
+            google.script.run
+                .withSuccessHandler(onCompleted)
+                .withFailureHandler(onFailure)
+                .withUserObject(event.target)
+                .loginUser(event.target);
+        } catch (error) {
+            onFailure(error);
+        }
+        return false;
+    }
+    function onCompleted(response, form) {
+        form.reset();
+        form.parentNode.removeChild(form);
+        google.script.run
+            .withSuccessHandler(function (url, rsp) {
+                var target = document.getElementById('msg');
+                target.innerHTML =
+                    `${rsp.message}，<a href="${url}?token=${rsp.token}">點此</a>回首頁`;
+            })
+            .withUserObject(response)
+            .getServerUrl();
+    }
+    function onFailure(error) {
+        console.error(error);
+        showText('登入失敗，錯誤訊息:' + error.message);
+    }
+</script>
+</html>
