@@ -1,4 +1,7 @@
 <?php
+if(empty($_POST['username'])){
+    
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 接收 data
     $username = $_POST['username'];
