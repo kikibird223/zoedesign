@@ -2904,7 +2904,9 @@ section {
         <div class="credits" style="color: rgba(0, 0, 0, 0.2);">
             Designed by <a style="color: rgba(0, 0, 0, 0.2);" href="https://pseprkxa8clpburmzcov9a.on.drv.tw/ZoeDesign.com/ " >Zoehsueh</a>
         </div>
+        <p class="credits" style="color: rgba(103, 204, 209, 0.95);">Total Visitors: <span id="visitor-count"></span></p>
     </div>
+   
 </footer>
 <!-- End Footer -->
 
@@ -2919,7 +2921,26 @@ section {
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  
+
+  <!-- 計算瀏覽人次 -->
+  <script>
+    // Get the current count from localStorage, if not set, initialize with 0
+    let visitCount = localStorage.getItem('page_view');
+    
+    // If not available, initialize the counter
+    if (visitCount === null) {
+        visitCount = 0;
+    }
+    
+    // Increment the count
+    visitCount++;
+    
+    // Save the updated count back to localStorage
+    localStorage.setItem('page_view', visitCount);
+    
+    // Display the count in the footer
+    document.getElementById('visitor-count').textContent = visitCount;
+</script>
     <!-- portfolio JS Files -->
   <!-- <script>document.addEventListener("DOMContentLoaded", function() {
     // 找到所有的portfolio-item
