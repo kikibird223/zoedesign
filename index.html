@@ -2093,7 +2093,8 @@ section {
               <div class="col-lg-4 ">
                   <div class="div-img-bg">
                       <div class="about-img">
-                          <img src="img/aboutme.jpg" class="img-responsive" alt="me">
+                          <img src="img/aboutme.jpg" class="img-responsive" alt="me" usemap="#memap" title="聯絡我">
+                          <map name="memap"><area shape="poly" coords="0,478,186,369,148,278,227,119,372,95,468,282,400,410,433,448,515,749" href="#contact" alt="" onclick="myFunction()"></map>
                       </div>
                   </div>
               </div>
@@ -3166,9 +3167,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
   
-  
+// 點擊照片的回饋文字
+  function myFunction() {alert("歡迎與我聯絡");}
+
   </script>
-  
 </body>
 
 </html>
