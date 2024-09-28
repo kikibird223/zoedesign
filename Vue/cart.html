@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            letter-spacing: .05em;
+            background: #b7b7b7;
+        }
+
+        /* .phone {
+            display: flex;
+            width: 414px;
+            height: 736px;
+            margin: 20px auto;
+            flex-direction: column;
+            background: #f3f3f3;
+            overflow: hidden;
+
+            @media (max-width: 414px) {
+                margin: 0;
+            }
+        } */
+
+        .phone {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 20px auto;
+            flex-direction: column;
+            background: #f3f3f3;
+            overflow: hidden;
+
+            @media (max-width: 414px) {
+                margin: 0;
+            }
+        }
+        nav {
+            z-index: 100;
+        }
+
+        .nav__tab {
+            display: flex;
+            margin: 0;
+            padding: 5px 20px 0;
+            list-style: none;
+            color: #c2c2c2;
+            font-size: 14px;
+            line-height: 4em;
+            text-align: center;
+            text-transform: uppercase;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+            li {
+                position: relative;
+                width: 50%;
+                overflow: hidden;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 2px;
+                    background: #ef8a8b;
+                    transition: transform 300ms;
+                }
+
+                &:first-child::after {
+                    transform: translate(100%, 0)
+                }
+
+                &:last-child::after {
+                    transform: translate(-100%, 0)
+                }
+
+                &.active {
+                    color: #ef8a8b;
+
+                    &::after {
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            overflow: hidden;
+
+            .content {
+                box-sizing: border-box;
+                width: 100%;
+                flex-shrink: 0;
+                overflow-y: scroll;
+                transition: transform 300ms;
+            }
+
+            &.shift {
+                .content {
+                    transform: translate(-100%, 0);
+                }
+            }
+        }
+
+        .product {
+            position: relative;
+            margin: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+            .info-box {
+                display: flex;
+                padding: 15px 5px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 10px;
+                    object-fit: contain;
+                }
+
+                h2 {
+                    margin: 10px 0;
+                    padding: 0;
+                    font-size: 18px;
+                }
+
+                p {
+                    margin: 0;
+                    color: #aba6a6;
+
+                    &::before {
+                        content: "$";
+                        margin-right: .3em;
+                    }
+                }
+            }
+
+            .action-box {
+                display: flex;
+                border-top: 1px solid #f3f3f3;
+                padding: 10px 10px 10px 15px;
+                justify-content: space-between;
+                align-items: center;
+
+                .round {
+                    width: 30px;
+                    height: 30px;
+                    outline: 0;
+                    border: 0;
+                    color: #fff;
+                    font-size: 18px;
+                    background: #c3c3c3;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 2em;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+                &>button {
+                    outline: 0;
+                    border: 0;
+                    padding: 10px 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    background: #ef8a8b;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+
+        table {
+            margin: 20px;
+            border-spacing: 0;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+            tr {
+                border-bottom: 1px solid #f3f3f3;
+            }
+
+            th,
+            td {
+                min-width: 2em;
+                width: 15%;
+                padding: 15px;
+                text-align: right;
+
+                &:first-child {
+                    width: 40%;
+                    text-align: left;
+                }
+
+                &:last-child {
+                    padding-right: 10px;
+                }
+            }
+
+            thead {
+                color: #ef8a8b;
+                font-size: 16px;
+                text-align: left;
+
+                .time {
+                    color: #c2c2c2;
+                    font-size: 14px;
+                    text-align: right;
+                }
+            }
+
+            tbody {
+                font-size: 14px;
+
+                .table-title {
+                    color: #c2c2c2;
+                    font-size: 12px;
+                }
+
+                .button-del {
+                    width: 30px;
+                    height: 30px;
+                    outline: 0;
+                    border: 0;
+                    padding: 0 0 .4em;
+                    color: #b6b6b6;
+                    font-size: 18px;
+                    background: transparent;
+                    cursor: pointer;
+                }
+            }
+
+            tfoot {
+                color: #959595;
+                font-size: 12px;
+                background: #f9f9f9;
+
+                .total-price {
+                    margin-left: 1em;
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .checkout {
+            display: block;
+            width: calc(100% - 2 * 20px);
+            margin: 20px;
+            outline: 0;
+            border: 0;
+            padding: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            background-color: #ef8a8b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+        }
+
+
+
+        .icon-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            padding: 30px 20px 0;
+            color: #ef8a8b;
+            font-size: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, .8);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s;
+
+            .circle,
+            .check {
+                fill: none;
+                stroke: #ef8a8b;
+                stroke-width: 3;
+            }
+
+            .check {
+                stroke-dasharray: 80 100;
+                stroke-dashoffset: 80;
+            }
+
+            &.showing {
+                opacity: 1;
+                pointer-events: auto;
+
+                .check {
+                    animation: check .3s cubic-bezier(0.5, 0, 0.6, 1) forwards .2s;
+                }
+            }
+        }
+
+        @keyframes check {
+            from {
+                stroke-dashoffset: 80;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes circle {
+            from {
+                stroke-dashoffset: -300;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone" id="app">
+        <!-- 導航列 -->
+        <nav>
+            <ul class="nav__tab">
+                <li :class="{ active: !isShowingCart }" @click="toggleTab(false)">products</li>
+                <li :class="{ active: isShowingCart }" @click="toggleTab(true)">shopping cart</li>
+            </ul>
+        </nav>
+
+        <!-- 主要展示區塊 -->
+        <main :class="{ shift: isShowingCart }">
+            <!-- 瀏覽產品 -->
+            <div class="content">
+                <!-- 範例 HTML -->
+                <div class="product" v-for="product in products">
+                    <div class="info-box">
+                        <img :src="product.thumb" />
+                        <div>
+                            <h2>{{ product.name }}</h2>
+                            <p>{{ product.price }}</p>
+                        </div>
+                    </div>
+                    <div class="action-box">
+                        <div>
+                            <button class="round" @click="minusOne(product)">-</button>
+                            <span>{{ product.amountShow }}</span>
+                            <button class="round" @click="addOne(product)">+</button>
+                        </div>
+                        <button @click="addToCart(product)">add to cart</button>
+                    </div>
+
+                    <!-- 購物成功的 icon -->
+                    <div class="icon-container" :class="{ showing: product.showingIcon }">
+                        <svg class="icon" viewBox="0 0 100 100" width="80" height="80">
+                            <circle class="circle" cx="50" cy="50" r="48"></circle>
+                            <polyline class="check" points="28,53 42,66 74,34"></polyline>
+                        </svg>
+                        <p>成功加入購物車</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 購物清單 -->
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Order</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-title">
+                            <td>品項</td>
+                            <td>數量</td>
+                            <td>單價</td>
+                            <td>小計</td>
+                            <td></td>
+                        </tr>
+                        <tr v-for="product in productsInCart">
+                            <td>{{ product.name }}</td>
+                            <td>{{ product.amount }}</td>
+                            <td>{{ product.price }}</td>
+                            <td>{{ product.sum }}</td>
+                            <td>
+                                <button class="button-del" @click="remove(product)">×</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td colspan="3">Total <span class="total-price">$ {{ total }}</span></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button class="checkout">前往付款</button>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <script>
+
+        new Vue({
+            el: "#app",
+            data: {
+                isShowingCart: false,
+                products: [
+                    {
+                        id: '2062',
+                        name: 'Miss Dior 淡香水',
+                        price: 2900,
+                        thumb: 'https://s5.pimg.tw/album/styleme/element/16810585_1450092930-1717385843/sresize/380x380.jpg',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }, {
+                        id: '832',
+                        name: 'All in one 亮彩膏',
+                        price: 1350,
+                        thumb: 'https://s7.pimg.tw/album/styleme/element/89173767_1485853372-1511782940/sresize/380x380.jpg',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }, {
+                        id: '16762',
+                        name: '超放電晶潤雙色唇膏',
+                        price: 850,
+                        thumb: 'https://s8.pimg.tw/album/styleme/element/89516838_1486096498-3741399352/sresize/380x380.png',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }, {
+                        id: '145',
+                        name: '奇蹟活源精露',
+                        price: 2100,
+                        thumb: 'https://s.pimg.tw/album/styleme/element/62038610_1471836809-2423849843/sresize/380x380.jpg',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }, {
+                        id: '103',
+                        name: '星鑽漾采眼影',
+                        price: 2600,
+                        thumb: 'https://s.pimg.tw/album/styleme/element/62032760_1471833970-3752241194/sresize/380x380.jpg',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }, {
+                        id: '16717',
+                        name: '新一代魅力 4G 幻彩蜜粉 雞年限量版',
+                        price: 2150,
+                        thumb: 'https://s1.pimg.tw/album/styleme/element/88472691_1485277468-753072152/sresize/380x380.png',
+                        amount: 0,
+                        amountShow: 1,
+                        showingIcon: false
+                    }
+                ]
+            },
+            methods: {
+                // 切換 產品列表 / 購物車 的 tab
+                toggleTab(shouldShowCart) {
+                    this.isShowingCart = shouldShowCart
+                },
+
+                // 點擊 - / + 後的動作
+                minusOne(product) {
+                    product.amountShow--
+                    product.amountShow = (product.amountShow < 1) ? 1 : product.amountShow
+                },
+                addOne(product) {
+                    product.amountShow++
+                    product.amountShow = (product.amountShow > 9) ? 9 : product.amountShow
+                },
+
+                // 點擊 add to cart 後的動作
+                addToCart(product) {
+                    product.amount += product.amountShow
+
+                    product.showingIcon = true
+                    setTimeout(() => {
+                        product.showingIcon = false
+                    }, 800)
+                },
+
+                // 在購物車裡移除單一品項 ( 把數量設置成 0 )
+                remove(product) {
+                    product.amount = 0
+                },
+            },
+            computed: {
+                // 購物車裡的品項
+                productsInCart() {
+                    return this.products
+                        // 只顯示購買數量 > 0 的項目
+                        .filter(p => p.amount)
+                        // 算出每個產品的小計
+                        .map(p => {
+                            p.sum = p.amount * p.price
+                            return p
+                        })
+                },
+
+                // 目前購買的金額
+                total() {
+                    return this.productsInCart
+                        .reduce((sum, p) => (sum + p.sum), 0)
+                }
+            },
+        })
+
+    </script>
+</body>
+
+</html>

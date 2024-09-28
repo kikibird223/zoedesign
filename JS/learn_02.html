@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- learn_1 -->
+    <h2>18.The var Keyword Creates Variables關鍵字創建變數</h2>
+    <p id="demo"></p>
+    <script>
+        var x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo").innerHTML = y;
+    </script>
+    <!-- learn_2 -->
+    <h2>19.JavaScript is Case Sensitive區分大小寫</h2>
+    <p id="demo02"></p>
+    <script>
+        let lastName, firstName;
+        lastName = "Johnson";
+        firstName = "John";
+        document.getElementById("demo02").innerHTML = firstName + " " + lastName
+    </script>
+    <!-- learn_3 -->
+    <!-- Automatically
+ Using var :變數 (僅當您必須支援舊瀏覽器時才使用)
+ Using let :讓 (僅let在不能使用時才使用const)
+ Using const :常數 (不能重新賦值)
+  -->
+    <h2>20.Variables are Containers for Storing Data變數</h2>
+    <p id="demo03"></p>
+    <script>
+        const myName = "John";
+        let myAge = 38;
+        var myCity = "New York";
+        document.getElementById("demo03").innerHTML = "My name is " + myName + " and I am " + myAge + " years old. I live in " + myCity + ".";
+    </script>
+    <!-- learn_4 -->
+    <h2>21.Example using const</h2>
+    <p id="demo04"></p>
+    <script>
+        const Price1 = 10;
+        const Price2 = 20;
+        const Total = Price1 + Price2;
+        document.getElementById("demo04").innerHTML = Price1 + Price2 + " is the total price."
+    </script>
+    <!-- learn_5 -->
+    <h2>22.Example using let</h2>
+    <p id="demo05"></p>
+    <script>
+        let x = 10;
+        // Here x is 10
+        {
+            let x = 2;
+            // Here x is 2
+        }
+        // Here x is 10
+        document.getElementById("demo05").innerHTML = x;
+    </script>
+    <!-- learn_5 -->
+    <h2>23.Example using Var</h2>
+    <p id="demo06"></p>
+    <script>
+        var x = 10;
+        // Here x is 10
+        {
+            var x = 2;
+            // Here x is 2
+        }
+        // Here x is 2
+        document.getElementById("demo06").innerHTML = x;
+    </script>
+    <!-- learn_6 -->
+    <!-- 意義：let在聲明變數之前使用變數將導致 ReferenceError： -->
+    <h2>24.JavaScript Hoisting</h2>
+    <p id="demo07"></p>
+    <script>
+        try {
+            CarName = "Toyota";
+            let CarName = "Honda";
+        }
+        catch (err) {
+            document.getElementById("demo07").innerHTML = err;
+        }
+    </script>
+    <!-- learn_7 -->
+    <h2>25.Constant Arrays數組</h2>
+    <p id="demo08"></p>
+    <script>
+        const bikes = ["BMX", "Mountain Bike", "Road Bike"];
+        // You can change an element:
+        bikes[0] = "Kids Bike";
+        // You can add an element:
+        bikes.push("Cruiser");
+        // You can remove an element:
+        bikes.pop("Road Bike");
+        document.getElementById("demo08").innerHTML = bikes;
+    </script>
+    <!-- learn_8 -->
+    <h2>26.Constant Objects物件</h2>
+    <p id="demo09"></p>
+    <script>
+        const phone = { type: "iphone", model: "12", color: "black" };
+        // You can change an element:
+        phone.color = "white";
+        // You can add an element:
+        phone.memory = "512GB";
+        // You can remove an element:
+        delete phone.model;
+        document.getElementById("demo09").innerHTML = "My phone is a " + phone.color + " " + phone.type;
+    </script>
+    <!-- learn_9 -->
+    <h2>27.JavaScropt const variables has block scope</h2>
+    <p id="demo10"></p>
+    <script>
+        const x = 10;
+        // Here x is 10
+        {
+            const x = 2;
+            // Here x is 2
+        }
+        // Here x is 10
+        document.getElementById("demo10").innerHTML = "x is " + x;
+    </script>
+    <!-- learn_10 -->
+    <h2>28.JavaScript String Operators</h2>
+    <p id="demo11"></p>
+    <script>
+        let text1 = "A";
+        let text2 = "B";
+        let result = text1 < text2;
+        document.getElementById("demo11").innerHTML = "Is A less than B? " + result;
+    </script>
+    <!-- learn_11 -->
+    <h2>29.Note that strings are compared alphabetically:</h2>
+    <p id="demo12"></p>
+    <script>
+        let text3 = "20";
+        let text4 = "10";
+        let result2 = text3 < text4;
+        document.getElementById("demo12").innerHTML = "Is " + text3 + " less than " + text4 + "?" + result2;
+    </script>
+    <!-- learn_12 -->
+    <h2>30.JavaScript String Operators</h2>
+    <p id="demo13"></p>
+    <script>
+        let text5 = "What a very ";
+        text5 += "nice day.";
+        document.getElementById("demo13").innerHTML = text5;
+    </script>
+    <!-- learn_13 -->
+    <h2>31.JavaScript String Operators</h2>
+    <p id="demo14"></p>
+    <script>
+        let text6 = 5 + 5;
+        let text7 = "5" + 5;
+        let text8 = "Hello" + text6;
+        document.getElementById("demo14").innerHTML = text6 + "<br>" + text7 + "<br>" + text8;
+    </script>
+    <!-- learn_14 -->
+    <h2>32.JavaScript Arithmetic遞增</h2>
+    <p id="demo15"></p>
+    <script>
+        let text14 = 5;
+        text14++;
+        let text15 = text14;
+        document.getElementById("demo15").innerHTML = text15;
+    </script>
+    <!-- learn_15 -->
+    <h2>33.JavaScript Arithmetic遞減</h2>
+    <p id="demo16"></p>
+    <script>
+        let text16 = 6;
+        text16--;
+        let text17 = x;
+        document.getElementById("demo16").innerHTML = text17;
+    </script>
+    <!-- learn_16 -->
+     <h2>34.JavaScript Arithmetic遞增</h2>
+    <p id="demo17"></p>
+   <script>
+    let text18 = 5;
+    text18 -- ;
+    let text19 = text18;
+    document.getElementById("demo17").innerHTML = text19;
+   </script>
+    <!-- learn_17 -->
+    <h2>35.JavaScript Arithmetic (**)次方</h2>
+    <p id="demo18"></p>
+    <script>
+        let text20 = 6;
+        let text21 = text20 ** 2;
+        document.getElementById("demo18").innerHTML = text21;
+    </script>
+    <!-- learn_18 -->
+    <h2>36.JavaScript Arithmetic (**)次方與Math.pow(x,y)相同</h2>
+    <p id="demo19"></p>
+    <script>
+        let text22 = 5;
+        text23 = Math.pow(text22, 2);
+        document.getElementById("demo19").innerHTML = text23;
+    </script>
+    <!-- learn_19 -->
+    <h2>37.JavaScript Arithmetic(+=)自加</h2>
+    <p id="demo20"></p>
+    <script>
+        let text24 = 5;
+        text24 += 5;
+        let text25 = text24;
+        document.getElementById("demo20").innerHTML = text25;
+    </script>
+    <!-- learn_20 --> 
+     <h2>38.JavaScript Arithmetic(-=)自減</h2>
+    <p id="demo21"></p>
+   <script>
+    let text26 = 5;
+    text26 -= 5;
+    let text27 = text26;
+    document.getElementById("demo21").innerHTML = text27;
+   </script>
+    <!-- learn_21 -->
+    <h2>39.Right Shift Assignment</h2>
+    <p id="demo22"></p>
+    <script>
+        let num1 = -110;
+        num1 >>>= 5;
+        document.getElementById("demo22").innerHTML = num1;
+    </script>
+    <!-- learn_22 -->
+    <h2>40.Creating JavaScript Objects</h2>
+    <p id="demo23"></p>
+    <script>
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        document.getElementById("demo23").innerHTML = "My name is " + person.name + " and I am " + person.age + " years old. I live in " + person.city + ".";
+    </script>
+    <!-- learn_23 -->
+    <h2>41.JavaScript Objects</h2>
+    <p id="demo24"></p>
+    <script>
+        let person2 = {};
+        person2.name = "Jane";
+        person2.age = 25;
+        person2.city = "Los Angeles";
+        document.getElementById("demo24").innerHTML = "My name is " + person2.name + " and I am " + person2.age + " years old. I live in " + person2.city + ".";
+    </script>
+    <!-- learn_24 -->
+    <h2>42.JavaScript Objects</h2>
+    <p id="demo25"></p>
+
+</body>
+
+</html>

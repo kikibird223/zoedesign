@@ -1,7 +1,4 @@
 <?php
-if(empty($_POST['username'])){
-    
-}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 接收 data
     $username = $_POST['username'];
@@ -10,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 連接資料庫
     $host = "localhost";
     $dbusername = "root";
-    $dbpassword = "";
+    $dbpassword = "xampp123";
     $dbname = "mywebsite";
 
     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
@@ -27,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows == 1) {
         // 登入成功
-        header("Location: success.html");
+        header("Location: success.php");
         exit();
     } else {
         // 登入失敗

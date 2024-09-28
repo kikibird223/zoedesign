@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- learn_01-->
+    <h2>01.顯示當下日期時間</h2>
+    <button type="button" onclick="document.getElementById('Datetime').innerHTML = Date()">
+        顯示當下日期時間</button>
+    <p id="Datetime"></p>
+    <!-- learn_02 -->
+    <h2>02.透過JS改html內容</h2>
+    <p id="changecontent">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("changecontent").innerHTML = "Hello JavaScript!"'>Click
+        Me!</button>
+    <!-- learn_03 -->
+    <h2>03.JS改圖片img</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style=" width:50px" alt="">
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">turn off the light</button>
+    <!-- learn_04 -->
+    <h2>04.JS改樣式style</h2>
+    <p id="fontsize">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('fontsize').style.fontSize='40px'">40px</button>
+    <button type="button" onclick="document.getElementById('fontsize').style.color='red'">red</button>
+    <button type="button" onclick="document.getElementById('fontsize').style.display='none'">none</button>
+    <button type="button" onclick="document.getElementById('fontsize').style.display='block'">block</button>
+    <!-- learn_05 -->
+    <h2>05.JS印出HTML內容</h2>
+    <p id="htmlfontprint"></p>
+    <button type="button" onclick="document.getElementById('htmlfontprint').innerHTML = 'Hello World!'">javascript print
+        html.</button>
+    <!-- learn_06 -->
+    <h2>06.JS更改文字內容</h2>
+    <p id="Paragraphchanged">JS更改文字內容</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            document.getElementById("Paragraphchanged").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+    <!-- learn_07 External file: myScript.js-->
+    <h2>07.JS載入外部檔案</h2>
+    <p id="demo">載入外部檔案</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p>This example links to "myScript.js".</p>
+    <p>(myFunction is stored in "myScript.js")</p>
+    <script src="myScript.js"></script>
+    <!-- learn_08 -->
+    <h2>08.用JS顯示文字</h2>
+    <p id="demo02"></p>
+    <script>
+        document.getElementById("demo02").innerHTML = 3 + 5;
+    </script>
+    <!-- learn_09 -->
+    <h2>09.用JS做按鈕取代文字</h2>
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+    <button onclick="document.write(4+6)">取代all內容</button>
+    <!-- learn_10 -->
+    <h2>10.彈出提示視窗alert</h2>
+    <button onclick="window.alert(3+8)">window.alert</button>
+    <button onclick="alert(4+8)">alert</button>
+    <script>
+        console.log(5 + 8);
+    </script>
+    <!-- learn_11 -->
+    <h2>11.用JS印頁面</h2>
+    <button onclick="window.print()">印此頁面</button>
+    <!-- learn_12 -->
+    <h2>12.載入JS檔</h2>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="module" src="learn_01.js"></script>
+    <!-- learn_13 -->
+    <h2>13.JavaScript Statements 語句</h2>
+    <p id="demo03"></p>
+    <script>
+        let x, y, z;
+        x = 5;
+        y = 10;
+        z = x + y;
+        document.getElementById("demo03").innerHTML = "The Value of z is" + z + ".";
+    </script>
+    <!-- learn_14 -->
+    <h2>14.JavaScript Syntax 語法</h2>
+    <p id="demo04"></p>
+    <script>
+        let a, b, c;
+        a = 10;
+        b = 20;
+        c = a + b;
+        document.getElementById("demo04").innerHTML = c;
+    </script>
+    <!-- learn_15 -->
+    <h2>15.JavaScript Strings</h2>
+    <p id="demo05"></p>
+    <script>
+        document.getElementById("demo05").innerHTML = 'John Doe';
+    </script>
+    <!-- learn_16 -->
+    <h2>16.JavaScript Operators運算符</h2>
+    <p id="demo06"></p>
+    <script>
+        document.getElementById("demo06").innerHTML = (10 + 5) * 10;
+    </script>
+    <!-- learn_17 -->
+    <h2>17Assigning JavaScript Values指派值</h2>
+    <p id="demo07"></p>
+    <script>
+        let a1, b1;
+        a1 = 10;
+        b1 = 15;
+        document.getElementById("demo07").innerHTML = "蘋果有" + (a1 + b1) + "顆";
+    </script>
+   
+</body>
+
+</html>
