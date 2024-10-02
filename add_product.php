@@ -18,8 +18,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [$product_title, $product_price, $category_id, $product_image_url, $product_iframe_url];
     $sql = "INSERT INTO products (product_title, product_price, category_id, product_image_url, product_iframe_url)
             VALUES (?, ?, ?, ?, ?)";
-    $stmt = $dbh->prepare($sql);
-    $stmt->execute($data);
+     // 預備語句
+     $stmt = $dbh->prepare($sql);
+     try {
+         $stmt->execute($data);
+         if ($stmt->rowCount() > 0) {
+             echo '新增成功';
+         } else {
+             echo '新增失敗';
+         }
+     } catch (PDOException $e) {
+         echo '新增失敗';
+     }
+     unset($_POST);
 
     header('Location: success.php');
 }

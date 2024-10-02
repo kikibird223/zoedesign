@@ -1,0 +1,69 @@
+.container {
+    margin: 30px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.container { /* 假設這是父容器 */
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中，如果需要的話 */
+    flex-direction: column; /* 如果要在列中顯示 */
+}
+
+#category-management,
+#product-management {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px; /* 這裡可以保留或調整 */
+    background: linear-gradient(to bottom, #ffffff, #ecf5f9);
+    color: #b8a07e;
+}
+
+
+
+#category-management tr :hover,
+#product-management tr :hover {
+    background-color: rgb(220, 220, 220);
+}
+
+#search {
+    border-radius: 50px;
+}
+
+#search-btn {
+    background-color: rgba(55, 181, 166, 0.9);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    /* Smooth transition */
+}
+
+#search-btn:hover {
+    background-color: black;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.navbar-brand:hover {
+    color: rgb(91, 255, 236);
+}
