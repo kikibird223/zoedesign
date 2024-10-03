@@ -40,7 +40,7 @@ if (isset($_POST['update'])) {
         }
 
         // Check file size
-        if ($_FILES["fileToUpload"]["size"] > 50000000) {
+        if ($_FILES["fileToUpload"]["size"] > 5000000) {
             $uploadOk = 0;
             $_SESSION['errors'][] = "Sorry, your file is too large.";
         }

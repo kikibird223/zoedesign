@@ -19,14 +19,9 @@
         $total_products_sql = "SELECT COUNT(*) FROM products";
         $stmt = $dbh->prepare($total_products_sql);
         $stmt->execute();
+        $total_products = $stmt->fetchColumn(); // 獲取產品總數
 
-        // 獲取產品總數
-        $total_products = $stmt->fetchColumn();
 
-        $limit = 3; // 每頁顯示的產品數量
-        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $offset = ($page - 1) * $limit;
-        $total_pages = ceil($total_products / $limit); // 總頁數計算
 
         // Fetch all categories "類別"連接資料庫
         $sql = "SELECT * FROM categories";
@@ -34,17 +29,13 @@
         $stmt->execute();
         $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        // Fetch products with pagination
+        // Fetch all products "產品"連接資料庫
         $sql = "SELECT p.*, c.category_name FROM products p 
-        LEFT JOIN categories c ON p.category_id = c.category_id 
-        LIMIT :limit OFFSET :offset";
+        LEFT JOIN categories c ON p.category_id = c.category_id";
         $stmt = $dbh->prepare($sql);
-        $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
-        $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
         $stmt->execute();
         $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
         ?>
-
 
         <!-- SHOP FILTER SECTION -->
         <div class="row shop-container" data-aos="fade-up" style="margin-bottom: 100px;">
@@ -83,22 +74,7 @@
 
         </div>
 
-        <!-- Pagination -->
-        <nav aria-label="Page navigation" >
-            <ul class="pagination justify-content-center" style="border-radius: 5px; color:  rgba(55, 181, 166, 0.9);">
-                <li class="page-item <?php if ($page <= 1) echo 'disabled'; ?>">
-                    <a class="page-link" href="?page=<?php echo max(1, $page - 1); ?>" tabindex="-1">上一頁</a>
-                </li>
-                <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-                    <li class="page-item <?php if ($i === $page) echo 'active'; ?>">
-                        <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-                    </li>
-                <?php endfor; ?>
-                <li class="page-item <?php if ($page >= $total_pages) echo 'disabled'; ?>">
-                    <a class="page-link" href="?page=<?php echo min($total_pages, $page + 1); ?>">下一頁</a>
-                </li>
-            </ul>
-        </nav>
+
 </section>
 
 <?php include "footer.php" ?>

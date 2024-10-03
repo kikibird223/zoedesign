@@ -22,6 +22,7 @@ $logins = $stmt->fetchAll(PDO::FETCH_ASSOC);
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="success.css">
+    <script src="success.js"></script>
 
 </head>
 
@@ -39,8 +40,8 @@ $logins = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex col-4 ms-auto" role="search" method="GET" action="search.php">
-                    <input id="search" class="form-control me-2" type="search" name="search" placeholder="關鍵字搜尋..." aria-label="Search">
+                <form class="d-flex col-lg-4 col-md-6 ms-auto" role="search" method="GET" action="search.php">
+                    <input id="search" class="form-control me-2" type="search" name="search" placeholder="產品、類別、關鍵字..." aria-label="Search">
                     <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <?php foreach ($logins as $login) : ?>
