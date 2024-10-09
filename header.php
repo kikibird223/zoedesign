@@ -308,7 +308,7 @@
         body {
             color: var(--text-color);
             padding: 0 auto;
-            padding-top: 50px;
+            /* padding-top: 50px; */
         }
 
 
@@ -469,10 +469,11 @@
         }
 
         .section-title {
+
             font-style: 1.5rem;
             font-weight: 600;
             text-align: center;
-            margin: 40px 0 0px 0;
+            margin: 80px 0 0px 0;
         }
 
         .shop-content {
