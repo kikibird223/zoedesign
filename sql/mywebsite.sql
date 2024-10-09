@@ -74,7 +74,7 @@ CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) DEFAULT NULL,
   `product_title` varchar(255) NOT NULL,
-  `product_price` decimal(10,2) NOT NULL,
+  `product_price` decimal(10,0) NOT NULL,
   `product_image_url` varchar(255) DEFAULT NULL,
   `product_iframe_url` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -84,11 +84,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_id`, `product_title`, `product_price`, `product_image_url`, `product_iframe_url`) VALUES
-(1, 3, '3D機構+渲染', 2000.00, NULL, 'https://sketchfab.com/models/6a67b2607d6443e3b08830f9feceea98/embed'),
-(2, 2, '壓克力商品設計', 1000.00, '壓克力商品設計.jpg', NULL),
-(3, 4, '造型黏土課程', 200.00, '7月_小小綿羊.jpg', NULL),
-(4, 5, '3D 建模', 2000.00, NULL, 'https://sketchfab.com/models/fb92021ea64c465d922d0062ce26e960/embed'),
-(5, 3, 'LOVE LETTER<br>恩典卡盒', 200.00, 'love-letter.gif', NULL);
+(1, 3, '3D機構+渲染', 2000 , NULL, 'https://sketchfab.com/models/6a67b2607d6443e3b08830f9feceea98/embed'),
+(2, 2, '壓克力商品設計', 1000 , '壓克力商品設計.jpg', NULL),
+(3, 4, '造型黏土課程', 200 , '7月_小小綿羊.jpg', NULL),
+(4, 5, '3D 建模', 2000 , NULL, 'https://sketchfab.com/models/fb92021ea64c465d922d0062ce26e960/embed'),
+(5, 3, 'LOVE LETTER<br>恩典卡盒', 200 , 'love-letter.gif', NULL);
 
 --
 -- 已傾印資料表的索引

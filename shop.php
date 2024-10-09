@@ -2,6 +2,9 @@
 <?php include "header.php" ?>
 <!-- End Header -->
 
+<div style="background-image: url('img/banner.jpg'); height: 150px; background-size: cover; background-position: center center;">
+
+</div>
 
 <!-- SHOP SECTION  -->
 <section id="shop" class="shop">
@@ -24,7 +27,8 @@
         $total_products = $stmt->fetchColumn();
 
         $limit = 3; // 每頁顯示的產品數量
-        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $page = 1; // 預設頁數
+        $page = isset($_GET['page']) && (int)$_GET['page'] > 0 ? (int)$_GET['page'] : 1;
         $offset = ($page - 1) * $limit;
         $total_pages = ceil($total_products / $limit); // 總頁數計算
 
@@ -84,7 +88,7 @@
         </div>
 
         <!-- Pagination -->
-        <nav aria-label="Page navigation" >
+        <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center" style="border-radius: 5px; color:  rgba(55, 181, 166, 0.9);">
                 <li class="page-item <?php if ($page <= 1) echo 'disabled'; ?>">
                     <a class="page-link" href="?page=<?php echo max(1, $page - 1); ?>" tabindex="-1">上一頁</a>

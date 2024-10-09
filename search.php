@@ -9,7 +9,7 @@ if (isset($_GET['search'])) {
 }
 
 // 搜索 `categories` 和 `products` 表中的匹配結果
-$sql = "SELECT p.*, c.category_name 
+$sql = "SELECT p.*, c.category_name cn
         FROM products p 
         JOIN categories c ON p.category_id = c.category_id 
         WHERE p.product_title LIKE :search_term OR c.category_name LIKE :search_term";
@@ -53,7 +53,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?php echo $product['product_id']; ?></td>
                                 <td><?php echo htmlspecialchars($product['product_title']); ?></td>
                                 <td>NT$<?php echo htmlspecialchars($product['product_price']); ?></td>
-                                <td><?php echo htmlspecialchars($product['category_name']); ?></td>
+                                <td><?php echo htmlspecialchars($product['cn']); ?></td>
                                 <td>
                                     <?php if (!empty($product['product_image_url'])): ?>
                                         <img src="img/shop/<?php echo $product['product_image_url']; ?>" class="img-fluid" width="100">
