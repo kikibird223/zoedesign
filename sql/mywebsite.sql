@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-10-01 23:14:27
+-- 產生時間： 2024-10-09 11:40:36
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -47,6 +47,21 @@ INSERT INTO `categories` (`category_id`, `category_image_url`, `category_name`) 
 -- --------------------------------------------------------
 
 --
+-- 資料表結構 `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `c_id` int(11) NOT NULL,
+  `c_name` varchar(100) DEFAULT NULL,
+  `c_email` varchar(100) DEFAULT NULL,
+  `c_subject` varchar(255) DEFAULT NULL,
+  `c_message` text DEFAULT NULL,
+  `submission_date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- 資料表結構 `login`
 --
 
@@ -84,11 +99,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_id`, `product_title`, `product_price`, `product_image_url`, `product_iframe_url`) VALUES
-(1, 3, '3D機構+渲染', 2000 , NULL, 'https://sketchfab.com/models/6a67b2607d6443e3b08830f9feceea98/embed'),
-(2, 2, '壓克力商品設計', 1000 , '壓克力商品設計.jpg', NULL),
-(3, 4, '造型黏土課程', 200 , '7月_小小綿羊.jpg', NULL),
-(4, 5, '3D 建模', 2000 , NULL, 'https://sketchfab.com/models/fb92021ea64c465d922d0062ce26e960/embed'),
-(5, 3, 'LOVE LETTER<br>恩典卡盒', 200 , 'love-letter.gif', NULL);
+(1, 3, '3D機構+渲染', 2000, NULL, 'https://sketchfab.com/models/6a67b2607d6443e3b08830f9feceea98/embed'),
+(2, 2, '壓克力商品設計', 1000, '壓克力商品設計.jpg', NULL),
+(3, 4, '造型黏土課程', 200, '7月_小小綿羊.jpg', NULL),
+(4, 5, '3D 建模', 2000, NULL, 'https://sketchfab.com/models/fb92021ea64c465d922d0062ce26e960/embed'),
+(5, 3, 'LOVE LETTER<br>恩典卡盒', 200, 'love-letter.gif', NULL);
 
 --
 -- 已傾印資料表的索引
@@ -99,6 +114,12 @@ INSERT INTO `products` (`product_id`, `category_id`, `product_title`, `product_p
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`category_id`);
+
+--
+-- 資料表索引 `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`c_id`);
 
 --
 -- 資料表索引 `login`
@@ -123,6 +144,12 @@ ALTER TABLE `products`
 --
 ALTER TABLE `categories`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- 使用資料表自動遞增(AUTO_INCREMENT) `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `login`

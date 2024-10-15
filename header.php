@@ -42,7 +42,24 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
-
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPNXN96');
+    </script>
+    <!-- End Google Tag Manager -->
     <style>
         #buy-now {
             border-radius: 25px;
@@ -682,101 +699,104 @@
 
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPNXN96"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-
- <!-- ======= Header ======= -->
- <header id="header" class="fixed-top header-transparent">
-  <nav class="navbar navbar-expand-lg">
-      <div class="container"  style="margin-top: 20px;">
-          <a class="navbar-brand" href="index.html" style="font-family: 'Bad Script', cursive; font-size: 30px; transition: none; ">
-            <!-- zoe hsueh -->
-            <img src="img/zoehsueh.png" alt="" style="width: 150px;" alt="my photo">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero" title="首頁">Home</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="#about" title="關於我">About</a>
-                </li>
-        
-           <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="featuresDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"title="作品集">
-                  Works
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-transparent">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="margin-top: 20px;">
+                <a class="navbar-brand" href="index.html" style="font-family: 'Bad Script', cursive; font-size: 30px; transition: none; ">
+                    <!-- zoe hsueh -->
+                    <img src="img/zoehsueh.png" alt="" style="width: 150px;" alt="my photo">
                 </a>
-                <div class="dropdown-menu" aria-labelledby="featuresDropdown">
-                    <a class="dropdown-item" href="#portfolio"title="機構設計">Mechanical Design</a>
-                    <a class="dropdown-item" href="#portfolio" title="動畫表現">Animation</a>
-                    <a class="dropdown-item" href="#portfolio" title="視覺平面">Graphic Design</a>
-                    <a class="dropdown-item" href="#portfolio"title="網頁設計">WebSite Design</a>
-                    <a class="dropdown-item" href="#portfolio"title="空間規劃">Interior Design</a>
-               
-                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="產品設計">
-                      Product Design
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Product-Y3000.html"title="學步車設計">Baby Walker</a></li>
-                      <li><a class="dropdown-item" href="Product-Virtual Exhibition .html"title="虛擬展間">SPE虛擬展間設計</a></li>
-                      <li><a class="dropdown-item" href="Product-X-Folding Bike.html"title="健身飛輪創新">X-Folding Bike</a></li>
-                    </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero" title="首頁">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" title="關於我">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="featuresDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="作品集">
+                                Works
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="featuresDropdown">
+                                <a class="dropdown-item" href="#portfolio" title="機構設計">Mechanical Design</a>
+                                <a class="dropdown-item" href="#portfolio" title="動畫表現">Animation</a>
+                                <a class="dropdown-item" href="#portfolio" title="視覺平面">Graphic Design</a>
+                                <a class="dropdown-item" href="#portfolio" title="網頁設計">WebSite Design</a>
+                                <a class="dropdown-item" href="#portfolio" title="空間規劃">Interior Design</a>
+
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="產品設計">
+                                    Product Design
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Product-Y3000.html" title="學步車設計">Baby Walker</a></li>
+                                    <li><a class="dropdown-item" href="Product-Virtual Exhibition .html" title="虛擬展間">SPE虛擬展間設計</a></li>
+                                    <li><a class="dropdown-item" href="Product-X-Folding Bike.html" title="健身飛輪創新">X-Folding Bike</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta" title="專業技能">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team" title="工作經歷">Experience</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" title="與我聯繫">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" title="管理者登入" style="color: black;">
+                                <i class="bi bi-person-circle bi-4x" style="font-size: 20px;"></i>
+                            </a>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.php" title="shop商店" style="color: black;" target="_blank">
+                                <i class='bx bx-shopping-bag ' id="cart-icon" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+
+
+                        <div id="google_translate_element" style="padding: 8px;"></div>
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'zh-TW',
+                                    includedLanguages: 'en,es,ja,zh-TW,fr', // 包括日文作为目标语言
+                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                }, 'google_translate_element');
+                            }
+                        </script>
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+                        <form class="d-flex" action="https://www.google.com/search" method="get" role="search">
+                            <input class="form-control me-2 rounded-pill" type="search" placeholder="輸入Google關鍵字..." aria-label="Search" name="q">
+                            <button class="btn btn-outline-light rounded-pill" type="submit">Search</button>
+                        </form>
+
+
+
                 </div>
-            </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="#cta" title="專業技能">Expertise</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#team" title="工作經歷">Experience</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" title="與我聯繫">Contact</a>
-                </li>
-        
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html" title="管理者登入"  style="color: black;">
-                      <i class="bi bi-person-circle bi-4x" style="font-size: 20px;"></i>
-                  </a>
-       
-              <li class="nav-item">
-                <a class="nav-link" href="shop.php" title="shop商店"  style="color: black;" target="_blank">
-                    <i class='bx bx-shopping-bag ' id="cart-icon" style="font-size: 20px;"></i>
-                </a>
-            </li>
-        
 
-            <div id="google_translate_element" style="padding: 8px;"></div>
-        
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'zh-TW',
-                        includedLanguages: 'en,es,ja,zh-TW,fr',  // 包括日文作为目标语言
-                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-                    }, 'google_translate_element');
-                }
-            </script>
-            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-            <form class="d-flex" action="https://www.google.com/search" method="get" role="search">
-                <input class="form-control me-2 rounded-pill" type="search" placeholder="輸入Google關鍵字..." aria-label="Search" name="q">
-                <button class="btn btn-outline-light rounded-pill" type="submit">Search</button>
-            </form>
-
-        
-
-        </div>
-        
-      </div>
-  </nav>
-</header>
-<!-- End Header -->
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->

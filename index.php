@@ -179,7 +179,7 @@
                   <li data-filter=".filter-T"> 服飾</li> 
                   <li data-filter=".filter-G"> 視覺</li>
                   <li data-filter=".filter-W"> 網頁</li> 
-                  <li data-filter=".filter-S"> 社群</li> 
+                  <!-- <li data-filter=".filter-S"> 社群</li>  -->
 
               </ul>
           </div>
@@ -334,13 +334,14 @@
                 <!-- <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
         </div>
+  
         <div class="col-lg-4 col-md-6 portfolio-item filter-T">
-            <img src="img/portfolio/西灣盃_2024工作介紹.gif" class="img-fluid" alt="T-shirt設計">
+            <img src="img/portfolio/西灣盃_2024工作介紹.png" class="img-fluid" alt="T-shirt設計">
             <div class="portfolio-info">
-                <h4>T-shirt design</h4>
+                <h4>西灣盃T-shirt設計</h4>
                 <p></p>
                 <p></p>
-                <a href="img/portfolio/西灣盃_2024工作介紹.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="t-shirt"><i class="bx bx-plus"></i></a>
+                <a href="img/portfolio/西灣盃_2024工作介紹.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="t-shirt"><i class="bx bx-plus"></i></a>
                 <!-- <a href="Product-X-Folding Bike.html" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
         </div>
@@ -371,9 +372,6 @@
               </div>
           </div>
 
-
-
-
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-W">
               <img src="img/portfolio/SEP Website.png" class="img-fluid" alt="">
@@ -386,6 +384,34 @@
               </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/匹克球拍.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>IG用行銷圖-匹克球拍</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/匹克球拍.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SEP Website"><i class="bx bx-plus"></i></a>
+                  </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/台灣品牌.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>IG用行銷圖-台灣品牌</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/台灣品牌.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SEP Website"><i class="bx bx-plus"></i></a>
+                  </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-G">
+              <img src="img/portfolio/FB_1000x1000_En.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                  <h4>IG用行銷圖-兒童節活動</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="img/portfolio/FB_1000x1000_En.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SEP Website"><i class="bx bx-plus"></i></a>
+                  </div>
+          </div>
       </div>
 
   </div>
@@ -776,7 +802,7 @@ document.querySelector('[data-filter="*"]').addEventListener('click', () => {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
 
-<script>
+<!-- <script>
 
     
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxjPf1vf67dxaUWndbqsgSO6FwAo6M4kjClNhWBH4C2LM5S7RatqNZqPBXPE2n8q9Re/exec'
@@ -789,7 +815,9 @@ document.querySelector('[data-filter="*"]').addEventListener('click', () => {
     .then(() => { window.location.reload(); })
     .catch(error => console.error('Error!', error.message))
   })
-    </script>
+    </script> -->
+
+    
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.testimonials-slider', {
