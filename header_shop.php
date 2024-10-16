@@ -30,8 +30,8 @@ $logins = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <nav class="navbar navbar-expand-lg " style="background-color: #055160;">
         <!-- Navbar content -->
         <div class="container-fluid">
-            <a class="navbar-brand ms-2" href="success.php">
-                <img src="img/zoehsueh.png" alt="" style="width: 150px; color: white; padding: 10px;" alt="my photo">
+            <a class="navbar-brand ms-2" href="index.php">
+                <img src="img/zoehsueh.png" alt="後台管理系統" style="width: 150px; color: white; padding: 10px;" title="首頁">
                 後台管理系統
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

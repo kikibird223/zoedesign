@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 連接資料庫
     $host = "localhost";
-    $dbusername = "root";
+    $dbusername = "kiki223";
     $dbpassword = "xampp123";
     $dbname = "mywebsite";
 

@@ -338,7 +338,7 @@
             left: 0;
             width: 100%;
             background-color: var(--bg-color);
-            box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+            /* box-shadow: 0 1px 4px hsl(0 4% 15% / 10%); */
             z-index: 100;
         }
 
